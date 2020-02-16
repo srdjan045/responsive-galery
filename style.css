@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+.container {
+	max-width: 960px;
+	width: 90%;
+	margin: 0 auto;
+	
+	
+	display: grid;
+	grid-template-columns: repeat(5, minmax(120px, auto));
+	grid-gap: 30px;
+	align-content: center;
+}
+
+.container .box {
+	height: 120px;
+	background-color: dodgerblue;
+	border-radius: 6px;
+}	
+
+.container .box img {
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+
+.container .box figcaption {
+	background-color: white;
+	text-align-last: center;
+}
+
+p {
+	margin: 50px 0 20px 0;
+}
+
+ @media screen and (max-width: 768px){
+       .container {
+           grid-template-columns: repeat(3, minmax(120px,auto));
+       }
+   }
+   @media screen and (max-width:414px){
+       .container {
+           grid-template-columns: repeat(1, minmax(120px,auto));
+       }
+   }
